@@ -21,3 +21,9 @@ chmod +x install.sh
 4. Forward port with the printed command:
 
 5. Log in at https://localhost:8443/ and paste the token.
+
+If you want to re-generate the token, you can run the following command:
+
+```bash
+kubectl -n kubernetes-dashboard create token admin-user
+```

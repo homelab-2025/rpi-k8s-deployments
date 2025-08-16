@@ -22,3 +22,9 @@ chmod +x install.sh
 4. Forward port with the printed command:
 
 5. Log in at https://localhost:8080/ using username `admin` and the token as password.
+
+Note: If you want to see the token again, you can run the following command:
+
+```bash
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+```
