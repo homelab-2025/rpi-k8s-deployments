@@ -3,7 +3,7 @@
 To install Longhorn on an already set up Raspberry Pi Kubernetes cluster, you just have to run the following command:
 
 ```sh
-kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/v1.10.0/deploy/longhorn.yaml
+kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/v1.11.1/deploy/longhorn.yaml
 ```
 
 This will create a namespace called `longhorn-system` and deploy all the necessary components.

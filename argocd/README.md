@@ -28,3 +28,9 @@ Note: If you want to see the token again, you can run the following command:
 ```bash
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 ```
+
+To connect to the ArgoCD using cli, you can use the following command:
+
+```bash
+argocd login <hostname>:<port> --username admin --password <token> --insecure
+```
